@@ -34,6 +34,7 @@ POSTS = [
     ("8B class, 52.9 vs 32.4", "https://x.com/1313hati/status/2112267358588833980"),
     ("7B class, 41.4 vs 10.6", "https://x.com/1313hati/status/2112269302006968640"),
     ("Eight-model panel", "https://x.com/1313hati/status/2112289303841677560"),
+    ("Article: What fits in twelve gigabytes", "https://x.com/1313hati/article/2112290740881514730"),
 ]
 
 
