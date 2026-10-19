@@ -1,0 +1,27 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8081/v1 model=gemma3-12b
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-12b
+
+target adhoc @ http://127.0.0.1:8081/v1 → served as 'gemma3-12b'
+[  1/12] t01_weighted_jobs        s1    6/12   50.0%     7.4s   34 t/s  repair 6/12
+[  2/12] t02_text_justify         s1   17/18   94.4%    16.7s   34 t/s  repair 17/18
+[  3/12] t03_json_parser          s1    0/1     0.0%    44.7s   33 t/s  repair 0/1
+[  4/12] t04_sql_report           s1   38/42   90.5%     8.1s   34 t/s  repair 38/42
+[  5/12] t05_async_pool           s1    0/12    0.0%    20.6s   34 t/s  repair 0/12 [no-result]
+[  6/12] t06_repo_bugfix          s1   14/25   56.0%    36.6s   33 t/s  repair 14/25
+[  7/12] t07_thread_queue         s1    0/23    0.0%    19.3s   34 t/s  repair 0/23 [no-result]
+[  8/12] t08_code_review          s1    4/14   28.6%    12.5s   32 t/s  repair 0/14
+[  9/12] t09_csv_rfc4180          s1    5/33   15.2%    29.4s   33 t/s  repair 7/33
+[ 10/12] t10_pairs_refactor       s1   13/13  100.0%     7.6s   33 t/s
+[ 11/12] t11_varint_protocol      s1    0/32    0.0%    26.2s   32 t/s  repair 0/32 [no-result]
+[ 12/12] t12_ledger_feature       s1    0/1     0.0%    73.2s   22 t/s  repair 0/1
+run complete: 12 new record(s), 12 total, 0 error(s), 20m 15.4s → /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-12b
+
+run    first  final  solved  records  med call  tok/s  tokens
+-----  -----  -----  ------  -------  --------  -----  ------
+adhoc  36.2%  36.7%    8.3%    12/12     19.9s   33.2  15,886
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-12b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-12b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-12b/REPORT.html

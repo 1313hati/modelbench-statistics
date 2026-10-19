@@ -1,0 +1,39 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8081/v1 model=gemma3-4b
+samples  2   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42 (+1 per sample)
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-4b
+
+target adhoc @ http://127.0.0.1:8081/v1 → served as 'gemma3-4b'
+[  1/24] t01_weighted_jobs        s1    6/12   50.0%     3.4s   95 t/s  repair 6/12
+[  2/24] t02_text_justify         s1   11/18   61.1%     5.9s   95 t/s  repair 11/18
+[  3/24] t03_json_parser          s1    0/47    0.0%    15.0s   93 t/s  repair 0/47 [no-result]
+[  4/24] t04_sql_report           s1   33/42   78.6%     3.5s   95 t/s  repair 37/42
+[  5/24] t05_async_pool           s1    5/12   41.7%     5.5s   94 t/s  repair 5/12
+[  6/24] t06_repo_bugfix          s1   14/25   56.0%     5.2s   90 t/s  repair 14/25
+[  7/24] t07_thread_queue         s1    0/23    0.0%     6.0s   94 t/s  repair 0/23 [no-result]
+[  8/24] t08_code_review          s1    2/14   14.3%     1.9s   92 t/s  repair 0/14
+[  9/24] t09_csv_rfc4180          s1    2/33    6.1%     6.6s   93 t/s  repair 2/33
+[ 10/24] t10_pairs_refactor       s1   13/13  100.0%     4.0s   95 t/s
+[ 11/24] t11_varint_protocol      s1    0/32    0.0%     7.8s   93 t/s  repair 0/32 [no-result]
+[ 12/24] t12_ledger_feature       s1    0/1     0.0%     7.5s   91 t/s  repair 0/1
+[ 13/24] t01_weighted_jobs        s2    0/12    0.0%     4.0s   94 t/s  repair 6/12 [no-result]
+[ 14/24] t02_text_justify         s2   15/18   83.3%     5.8s   92 t/s  repair 15/18
+[ 15/24] t03_json_parser          s2    0/1     0.0%    18.4s   88 t/s  repair 0/1
+[ 16/24] t04_sql_report           s2    1/4    25.0%    71.0s   82 t/s  repair 37/42
+[ 17/24] t05_async_pool           s2    4/12   33.3%     5.1s   93 t/s  repair 4/12
+[ 18/24] t06_repo_bugfix          s2   14/25   56.0%    17.1s   89 t/s  repair 14/25
+[ 19/24] t07_thread_queue         s2    0/23    0.0%    20.8s   55 t/s  repair 0/23 [no-result]
+[ 20/24] t08_code_review          s2    4/14   28.6%     5.1s   85 t/s  repair 0/14
+[ 21/24] t09_csv_rfc4180          s2    8/33   24.2%    24.1s   87 t/s  repair 8/33
+[ 22/24] t10_pairs_refactor       s2   13/13  100.0%     5.2s   93 t/s
+[ 23/24] t11_varint_protocol      s2    0/32    0.0%     6.2s   94 t/s  repair 0/32 [no-result]
+[ 24/24] t12_ledger_feature       s2    0/1     0.0%     9.2s   90 t/s  repair 0/1
+run complete: 24 new record(s), 24 total, 0 error(s), 10m 42.3s → /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-4b
+
+run    first  final  solved  records  med call  tok/s  tokens
+-----  -----  -----  ------  -------  --------  -----  ------
+adhoc  31.6%  36.7%    8.3%    24/24      5.9s   92.7  27,773
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-4b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-4b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/gemma3-4b/REPORT.html

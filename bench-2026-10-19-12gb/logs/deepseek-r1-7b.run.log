@@ -1,0 +1,7 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8081/v1 model=deepseek-r1-7b
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/deepseek-r1-7b
+
+target adhoc @ http://127.0.0.1:8081/v1 → served as 'deepseek-r1-7b'
+[  1/12] t01_weighted_jobs        s1   12/12  100.0%   152.0s   40 t/s

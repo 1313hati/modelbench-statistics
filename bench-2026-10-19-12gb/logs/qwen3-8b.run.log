@@ -1,0 +1,27 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8081/v1 model=qwen3-8b
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-8b
+
+target adhoc @ http://127.0.0.1:8081/v1 → served as 'qwen3-8b'
+[  1/12] t01_weighted_jobs        s1   12/12  100.0%   216.8s   35 t/s
+[  2/12] t02_text_justify         s1   13/18   72.2%   292.2s   34 t/s  repair 18/18 [cap-retry]
+[  3/12] t03_json_parser          s1    0/47    0.0%   472.1s   32 t/s  repair 0/47 [cap-retry] [no-result]
+[  4/12] t04_sql_report           s1   39/42   92.9%   102.4s   36 t/s  repair 41/42
+[  5/12] t05_async_pool           s1    0/1     0.0%   383.0s   33 t/s  repair 0/12 [cap-retry]
+[  6/12] t06_repo_bugfix          s1   22/25   88.0%   138.4s   35 t/s  repair 22/25 [cap-retry]
+[  7/12] t07_thread_queue         s1    0/23    0.0%   227.6s   35 t/s  repair 0/23 [no-result]
+[  8/12] t08_code_review          s1    8/14   57.1%    42.7s   37 t/s  repair 0/14 [raw]
+[  9/12] t09_csv_rfc4180          s1    0/33    0.0%   367.2s   33 t/s  repair 0/33 [cap-retry] [no-result]
+[ 10/12] t10_pairs_refactor       s1   13/13  100.0%   103.6s   36 t/s
+[ 11/12] t11_varint_protocol      s1    0/1     0.0%   503.2s   32 t/s  repair 0/32 [cap-retry]
+[ 12/12] t12_ledger_feature       s1   23/25   92.0%   207.8s   34 t/s  repair 0/25
+run complete: 12 new record(s), 12 total, 0 error(s), 1h 45m → /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-8b
+
+run    first  final  solved  records  med call  tok/s   tokens
+-----  -----  -----  ------  -------  --------  -----  -------
+adhoc  50.2%  52.9%   16.7%    12/12    222.2s   34.4  207,627
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-8b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-8b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-8b/REPORT.html

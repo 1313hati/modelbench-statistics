@@ -1,0 +1,51 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8082/v1 model=qwen38new
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/qwen38-27b
+
+target adhoc @ http://127.0.0.1:8082/v1 → served as 'qwen38new'
+[  1/12] t01_weighted_jobs        s1   12/12  100.0%   140.7s   30 t/s
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t02_text_justify s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t03_json_parser s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t04_sql_report s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t05_async_pool s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t06_repo_bugfix s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t07_thread_queue s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t08_code_review s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t09_csv_rfc4180 s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t10_pairs_refactor s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t11_varint_protocol s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+    · retry 1/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 1s
+    · retry 2/2 after URLError: <urlopen error [Errno 111] Connection refused>; sleeping 2s
+    ! t12_ledger_feature s1 failed: TargetUnavailable: adhoc: giving up after 3 attempts: URLError: <urlopen error [Errno 111] Connection refused>
+run complete: 1 new record(s), 1 total, 11 error(s), 3m 31.9s → /home/hati/.hermes/cache/scratch/smallbench/runs/qwen38-27b
+
+run     first   final  solved  records  med call  tok/s  tokens
+-----  ------  ------  ------  -------  --------  -----  ------
+adhoc  100.0%  100.0%  100.0%     1/12    140.7s   29.7   4,157
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/qwen38-27b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/qwen38-27b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/qwen38-27b/REPORT.html
+
+warning: 11 task(s) failed and were not recorded; see /home/hati/.hermes/cache/scratch/smallbench/runs/qwen38-27b/errors.log

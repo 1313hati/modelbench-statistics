@@ -1,0 +1,27 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8080/v1 model=mistral-7b
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/mistral-7b
+
+target adhoc @ http://127.0.0.1:8080/v1 → served as 'mistral-7b'
+[  1/12] t01_weighted_jobs        s1    4/12   33.3%     7.2s   41 t/s  repair 4/12
+[  2/12] t02_text_justify         s1    0/18    0.0%    11.1s   41 t/s  repair 0/18 [no-result]
+[  3/12] t03_json_parser          s1    0/47    0.0%    25.0s   41 t/s  repair 0/47 [no-result]
+[  4/12] t04_sql_report           s1   35/42   83.3%     9.4s   41 t/s  repair 36/42
+[  5/12] t05_async_pool           s1    0/1     0.0%    16.4s   41 t/s  repair 1/12
+[  6/12] t06_repo_bugfix          s1    0/25    0.0%     7.1s   39 t/s  repair 0/25 [no-result]
+[  7/12] t07_thread_queue         s1    0/1     0.0%    19.6s   41 t/s  repair 0/1
+[  8/12] t08_code_review          s1    0/14    0.0%    12.2s   40 t/s  repair 0/14
+[  9/12] t09_csv_rfc4180          s1    0/33    0.0%    13.5s   41 t/s  repair 0/33 [no-result]
+[ 10/12] t10_pairs_refactor       s1    0/13    0.0%     7.0s   41 t/s  repair 0/13 [no-result]
+[ 11/12] t11_varint_protocol      s1    0/32    0.0%    18.6s   41 t/s  repair 0/1 [no-result]
+[ 12/12] t12_ledger_feature       s1    0/1     0.0%    20.6s   39 t/s  repair 0/1
+run complete: 12 new record(s), 12 total, 0 error(s), 5m 00.5s → /home/hati/.hermes/cache/scratch/smallbench/runs/mistral-7b
+
+run    first  final  solved  records  med call  tok/s  tokens
+-----  -----  -----  ------  -------  --------  -----  ------
+adhoc   9.7%  10.6%    0.0%    12/12     12.9s   41.0  11,672
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/mistral-7b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/mistral-7b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/mistral-7b/REPORT.html

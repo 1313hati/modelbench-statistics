@@ -1,0 +1,27 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8080/v1 model=llama31-8b
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/llama31-8b
+
+target adhoc @ http://127.0.0.1:8080/v1 → served as 'llama31-8b'
+[  1/12] t01_weighted_jobs        s1    0/12    0.0%     7.7s   39 t/s  repair 0/12 [no-result]
+[  2/12] t02_text_justify         s1    9/18   50.0%     9.3s   39 t/s  repair 0/18
+[  3/12] t03_json_parser          s1    0/47    0.0%    25.4s   39 t/s  repair 0/47 [no-result]
+[  4/12] t04_sql_report           s1   17/34   50.0%     6.4s   39 t/s  repair 1/4
+[  5/12] t05_async_pool           s1    0/12    0.0%    10.8s   39 t/s  repair 0/12 [no-result]
+[  6/12] t06_repo_bugfix          s1   12/25   48.0%    20.2s   38 t/s  repair 13/25
+[  7/12] t07_thread_queue         s1    0/23    0.0%    16.6s   39 t/s  repair 0/23 [no-result]
+[  8/12] t08_code_review          s1    7/14   50.0%    12.3s   38 t/s  repair 13/14
+[  9/12] t09_csv_rfc4180          s1    0/33    0.0%     6.0s   39 t/s  repair 0/33 [no-result]
+[ 10/12] t10_pairs_refactor       s1   13/13  100.0%     1.6s   40 t/s
+[ 11/12] t11_varint_protocol      s1    0/32    0.0%    11.4s   39 t/s  repair 0/32 [no-result]
+[ 12/12] t12_ledger_feature       s1   11/25   44.0%    15.5s   38 t/s  repair 0/25
+run complete: 12 new record(s), 12 total, 0 error(s), 7m 41.3s → /home/hati/.hermes/cache/scratch/smallbench/runs/llama31-8b
+
+run    first  final  solved  records  med call  tok/s  tokens
+-----  -----  -----  ------  -------  --------  -----  ------
+adhoc  28.5%  32.4%    8.3%    12/12     11.1s   38.8  10,433
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/llama31-8b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/llama31-8b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/llama31-8b/REPORT.html

@@ -1,0 +1,27 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8081/v1 model=qwen25coder-7b
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/qwen25coder-7b
+
+target adhoc @ http://127.0.0.1:8081/v1 → served as 'qwen25coder-7b'
+[  1/12] t01_weighted_jobs        s1    5/12   41.7%     7.0s   42 t/s  repair 5/12
+[  2/12] t02_text_justify         s1   11/18   61.1%    10.3s   42 t/s  repair 11/18
+[  3/12] t03_json_parser          s1    0/47    0.0%    26.3s   41 t/s  repair 0/47 [no-result]
+[  4/12] t04_sql_report           s1   38/42   90.5%     4.3s   41 t/s  repair 38/42
+[  5/12] t05_async_pool           s1    0/12    0.0%    10.5s   41 t/s  repair 0/12 [no-result]
+[  6/12] t06_repo_bugfix          s1   18/25   72.0%     8.5s   40 t/s  repair 16/25
+[  7/12] t07_thread_queue         s1    0/23    0.0%    10.0s   41 t/s  repair 0/23 [no-result]
+[  8/12] t08_code_review          s1    8/14   57.1%     6.4s   41 t/s  repair 0/14
+[  9/12] t09_csv_rfc4180          s1    0/33    0.0%    10.2s   41 t/s  repair 0/33 [no-result]
+[ 10/12] t10_pairs_refactor       s1   13/13  100.0%     1.8s   42 t/s
+[ 11/12] t11_varint_protocol      s1   24/32   75.0%    10.8s   42 t/s  repair 24/32
+[ 12/12] t12_ledger_feature       s1    0/25    0.0%     9.9s   41 t/s  repair 0/25 [no-result]
+run complete: 12 new record(s), 12 total, 0 error(s), 8m 04.0s → /home/hati/.hermes/cache/scratch/smallbench/runs/qwen25coder-7b
+
+run    first  final  solved  records  med call  tok/s  tokens
+-----  -----  -----  ------  -------  --------  -----  ------
+adhoc  41.5%  41.5%    8.3%    12/12      9.9s   41.4   9,683
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/qwen25coder-7b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/qwen25coder-7b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/qwen25coder-7b/REPORT.html

@@ -1,0 +1,39 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8080/v1 model=qwen3-4b
+samples  2   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42 (+1 per sample)
+output   /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-4b
+
+target adhoc @ http://127.0.0.1:8080/v1 → served as 'qwen3-4b'
+[  1/24] t01_weighted_jobs        s1   12/12  100.0%     2.9s   98 t/s
+[  2/24] t02_text_justify         s1   10/18   55.6%    11.7s   96 t/s  repair 11/18
+[  3/24] t03_json_parser          s1    0/47    0.0%    22.6s   94 t/s  repair 0/47 [no-result]
+[  4/24] t04_sql_report           s1   39/42   92.9%     4.1s   98 t/s  repair 39/42
+[  5/24] t05_async_pool           s1    5/12   41.7%    12.6s   96 t/s  repair 5/12
+[  6/24] t06_repo_bugfix          s1   14/25   56.0%     5.0s   91 t/s  repair 15/25
+[  7/24] t07_thread_queue         s1   21/23   91.3%     7.0s   96 t/s  repair 0/23
+[  8/24] t08_code_review          s1    7/14   50.0%     5.1s   93 t/s  repair 7/14
+[  9/24] t09_csv_rfc4180          s1    0/33    0.0%    10.3s   94 t/s  repair 0/33 [no-result]
+[ 10/24] t10_pairs_refactor       s1   13/13  100.0%     1.6s   96 t/s
+[ 11/24] t11_varint_protocol      s1    0/32    0.0%     7.9s   97 t/s  repair 0/32 [no-result]
+[ 12/24] t12_ledger_feature       s1    0/25    0.0%    14.6s   90 t/s  repair 0/25 [no-result]
+[ 13/24] t01_weighted_jobs        s2    0/12    0.0%     3.3s   97 t/s  repair 12/12 [no-result]
+[ 14/24] t02_text_justify         s2   11/18   61.1%     5.5s   96 t/s  repair 12/18
+[ 15/24] t03_json_parser          s2    0/47    0.0%    19.4s   94 t/s  repair 0/47 [no-result]
+[ 16/24] t04_sql_report           s2   36/42   85.7%     2.0s   86 t/s  repair 38/42
+[ 17/24] t05_async_pool           s2    0/1     0.0%    24.1s   84 t/s  repair 0/12
+[ 18/24] t06_repo_bugfix          s2   14/25   56.0%    22.9s   85 t/s  repair 15/25
+[ 19/24] t07_thread_queue         s2    0/23    0.0%     7.1s   96 t/s  repair 0/23 [no-result]
+[ 20/24] t08_code_review          s2    8/14   57.1%     6.7s   92 t/s  repair 0/14
+[ 21/24] t09_csv_rfc4180          s2   18/33   54.5%     7.1s   97 t/s  repair 0/33
+[ 22/24] t10_pairs_refactor       s2   13/13  100.0%     0.8s  100 t/s
+[ 23/24] t11_varint_protocol      s2    0/32    0.0%     9.6s   97 t/s  repair 0/32 [no-result]
+[ 24/24] t12_ledger_feature       s2    0/25    0.0%    10.9s   92 t/s  repair 0/25 [no-result]
+run complete: 24 new record(s), 24 total, 0 error(s), 17m 42.2s → /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-4b
+
+run    first  final  solved  records  med call  tok/s  tokens
+-----  -----  -----  ------  -------  --------  -----  ------
+adhoc  41.7%  46.9%   12.5%    24/24      7.1s   95.7  32,246
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-4b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-4b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/qwen3-4b/REPORT.html

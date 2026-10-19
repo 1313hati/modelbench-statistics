@@ -1,0 +1,124 @@
+gemma3-4b: server up on 8081 (CUDA1)
+qwen3-4b: server up on 8080 (CUDA0)
+gemma3-4b: exit=0 2026-10-19T16:55:47+02:00
+qwen3-4b: exit=0 2026-10-19T17:02:47+02:00
+ALL DONE 2026-10-19T17:02:47+02:00
+27b: server up 2026-10-19T17:05:33+02:00
+27b: exit=1 2026-10-19T17:09:05+02:00
+no size for Qwen3-14B-Q4_K_M.gguf
+no size for Qwen2.5-14B-Instruct-Q4_K_M.gguf
+no size for Meta-Llama-3.1-8B-Instruct-Q8_0.gguf
+no size for Mistral-7B-Instruct-v0.3-Q8_0.gguf
+PANEL DONE 2026-10-19T17:11:13+02:00
+waiting Qwen3-14B-Q4_K_M.gguf 4884 MB
+waiting Qwen3-14B-Q4_K_M.gguf 5131 MB
+waiting Qwen3-14B-Q4_K_M.gguf 5365 MB
+waiting Qwen3-14B-Q4_K_M.gguf 5635 MB
+waiting Qwen3-14B-Q4_K_M.gguf 5866 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6096 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6317 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6401 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6423 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6440 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6454 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6475 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6514 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6560 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6633 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6697 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6731 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6782 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6836 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6906 MB
+waiting Qwen3-14B-Q4_K_M.gguf 6976 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7046 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7075 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7135 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7218 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7276 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7328 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7379 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7431 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7492 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7578 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7664 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7749 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7817 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7884 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7940 MB
+waiting Qwen3-14B-Q4_K_M.gguf 7969 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8028 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8059 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8079 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8095 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8124 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8153 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8207 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8269 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8349 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8408 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8470 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8530 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8597 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8629 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8659 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8729 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8799 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8833 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8857 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8880 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8901 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8924 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8955 MB
+waiting Qwen3-14B-Q4_K_M.gguf 8993 MB
+ready Qwen3-14B-Q4_K_M.gguf 9001753984
+waiting gemma-3-12b-it-Q5_K_M.gguf 7292 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7367 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7440 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7530 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7606 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7697 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7764 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7829 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7902 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 7971 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 8038 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 8129 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 8209 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 8275 MB
+waiting gemma-3-12b-it-Q5_K_M.gguf 8370 MB
+ready gemma-3-12b-it-Q5_K_M.gguf 8445036896
+qwen3-14b: up on 8080 (CUDA0) 17:41:45
+gemma3-12b: up on 8081 (CUDA1) 17:41:49
+ready Qwen3-14B-Q4_K_M.gguf 9001753984
+ready gemma-3-12b-it-Q5_K_M.gguf 8445036896
+qwen3-14b: up on 8080 (CUDA0) 17:55:09
+gemma3-12b: up on 8081 (CUDA1) 17:55:09
+WAVE DONE qwen3-14b gemma3-12b 2026-10-19T17:57:01+02:00
+WAVE DONE qwen3-14b gemma3-12b 2026-10-19T17:57:01+02:00
+ready Qwen3-14B-Q4_K_M.gguf 9001753984
+ready gemma-3-12b-it-Q5_K_M.gguf 8445036896
+qwen3-14b: up on 8080 (CUDA0) 17:58:21
+gemma3-12b: up on 8081 (CUDA1) 17:58:23
+gemma3-12b: exit=0 2026-10-19T18:18:39+02:00
+qwen3-14b: exit=0 2026-10-19T19:42:14+02:00
+WAVE DONE qwen3-14b gemma3-12b 2026-10-19T19:42:15+02:00
+ready Qwen2.5-14B-Instruct-Q4_K_M.gguf 8988110976
+ready Qwen3-8B-Q8_0.gguf 8709519168
+qwen25-14b: up on 8080 (CUDA0) 19:43:31
+qwen3-8b: up on 8081 (CUDA1) 19:43:33
+qwen25-14b: exit=0 2026-10-19T19:50:11+02:00
+qwen3-8b: exit=0 2026-10-19T21:29:00+02:00
+WAVE DONE qwen25-14b qwen3-8b 2026-10-19T21:29:02+02:00
+ready Meta-Llama-3.1-8B-Instruct-Q8_0.gguf 8540775840
+ready Qwen2.5-Coder-7B-Instruct-Q8_0.gguf 8098525152
+qwen25coder-7b: up on 8081 (CUDA1) 21:29:53
+llama31-8b: up on 8080 (CUDA0) 21:29:57
+llama31-8b: exit=0 2026-10-19T21:37:39+02:00
+qwen25coder-7b: exit=0 2026-10-19T21:37:58+02:00
+WAVE DONE llama31-8b qwen25coder-7b 2026-10-19T21:37:59+02:00
+ready Mistral-7B-Instruct-v0.3-Q8_0.gguf 7702565088
+ready DeepSeek-R1-Distill-Qwen-7B-Q8_0.gguf 8098524896
+deepseek-r1-7b: up on 8081 (CUDA1) 21:38:51
+mistral-7b: up on 8080 (CUDA0) 21:38:53
+mistral-7b: exit=0 2026-10-19T21:43:53+02:00
