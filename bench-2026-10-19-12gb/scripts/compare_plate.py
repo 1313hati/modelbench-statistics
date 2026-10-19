@@ -35,13 +35,14 @@ POINTS = [
     ("gemma3-4b", "Gemma-3-4B", 4.0, "Q4_K_M", "gemma"),
     ("gemma3-12b", "Gemma-3-12B", 12.2, "Q5_K_M", "gemma"),
     ("qwen25-14b", "Qwen2.5-14B", 14.7, "Q4_K_M", "qwen25"),
-    ("qwen25coder-7b", "Qwen2.5-Coder-7B", 7.6, "Q8_0", "other"),
-    ("llama31-8b", "Llama-3.1-8B", 8.0, "Q8_0", "other"),
-    ("mistral-7b", "Mistral-7B", 7.2, "Q8_0", "other"),
-    ("deepseek-r1-7b", "R1-Distill-7B", 7.6, "Q8_0", "other"),
+    ("qwen25coder-7b", "Qwen2.5-Coder-7B", 7.6, "Q8_0", "coder"),
+    ("llama31-8b", "Llama-3.1-8B", 8.0, "Q8_0", "llama"),
+    ("mistral-7b", "Mistral-7B", 7.2, "Q8_0", "mistral"),
+    ("deepseek-r1-7b", "R1-Distill-7B", 7.6, "Q8_0", "r1"),
 ]
 
-FAMILY_COLOUR = {"qwen": OXBLOOD, "gemma": TEAL, "qwen25": (86, 104, 66), "other": MUTED}
+FAMILY_COLOUR = {"qwen": OXBLOOD, "gemma": TEAL, "qwen25": (86, 104, 66),
+                 "coder": MUTED, "llama": MUTED, "mistral": MUTED, "r1": MUTED}
 
 
 def render(out: str) -> str:
@@ -121,7 +122,7 @@ def render(out: str) -> str:
         col = FAMILY_COLOUR[fam]
         d.ellipse((x - 8, y - 8, x + 8, y + 8), fill=col + (235,), outline=PAPER + (255,), width=2)
         # label above unless crowded, alternate
-        dy = -34 if (slug not in ("gemma3-12b", "qwen25-14b")) else 18
+        dy = 18 if slug in ("gemma3-12b", "qwen25-14b", "deepseek-r1-7b", "mistral-7b") else -34
         tw = d.textlength(label, font=f_lab)
         d.text((x - tw / 2, y + dy), label, font=f_lab, fill=INK)
         q = f"{st['score']*100:.1f}%  ·  {quant}"

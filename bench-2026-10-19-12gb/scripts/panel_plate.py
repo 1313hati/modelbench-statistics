@@ -7,6 +7,8 @@ small ASCII die, its quantisation and weight size, its score, and its decode rat
 
 from __future__ import annotations
 
+import json
+import statistics
 import sys
 from pathlib import Path
 
@@ -14,28 +16,50 @@ from PIL import Image, ImageDraw, ImageFont
 
 from gguf_map import die_image, profile, to_ascii
 from small_models_plate import (INK, MUTED, MONO, MONO_B, OXBLOOD, PAPER, PAPER_DEEP,
+                                RUNS as RUNS_DIR,
                                 RULE, SERIF_B, TEAL, _fitted, _title_block, _tracked,
                                 ascii_block, families, gib, paper, stats as _stats)
 
 
 def stats(slug):
-    try:
-        return _stats(slug)
-    except FileNotFoundError:
+    """Completion tokens only, first phase only — the same figure quoted in the posts."""
+    path = RUNS_DIR / slug / "results.jsonl"
+    if not path.exists():
         return {}
+    recs = [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+    if not recs:
+        return {}
+    per_task: dict[str, list[float]] = {}
+    tokens = 0
+    rates = []
+    for r in recs:
+        per_task.setdefault(r["task"], []).append(r["final_score"])
+        first = r.get("first") or {}
+        tokens += first.get("completion_tokens") or 0
+        if first.get("tok_per_s"):
+            rates.append(first["tok_per_s"])
+    means = {t: statistics.mean(v) for t, v in per_task.items()}
+    return {
+        "tasks": len(means),
+        "samples": len(recs),
+        "solved": sum(1 for v in means.values() if v >= 0.999),
+        "score": statistics.mean(means.values()),
+        "tok_s": statistics.mean(rates) if rates else 0.0,
+        "tok_per_task": tokens / len(recs),
+    }
 
 W, H = 1600, 900
 MODELS_DIR = Path("/home/hati/.cache/llama-models")
 
 CARDS = [
     ("qwen3-14b", "QWEN3-14B", "Qwen3-14B-Q4_K_M.gguf", "Q4_K_M", 14.8),
+    ("qwen3-8b", "QWEN3-8B", "Qwen3-8B-Q8_0.gguf", "Q8_0", 8.2),
+    ("qwen25coder-7b", "QWEN2.5-CODER-7B", "Qwen2.5-Coder-7B-Instruct-Q8_0.gguf", "Q8_0", 7.6),
     ("gemma3-12b", "GEMMA-3-12B-IT", "gemma-3-12b-it-Q5_K_M.gguf", "Q5_K_M", 12.2),
     ("qwen25-14b", "QWEN2.5-14B-INS", "Qwen2.5-14B-Instruct-Q4_K_M.gguf", "Q4_K_M", 14.7),
-    ("qwen3-8b", "QWEN3-8B", "Qwen3-8B-Q8_0.gguf", "Q8_0", 8.2),
     ("llama31-8b", "LLAMA-3.1-8B-INS", "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf", "Q8_0", 8.0),
-    ("qwen25coder-7b", "QWEN2.5-CODER-7B", "Qwen2.5-Coder-7B-Instruct-Q8_0.gguf", "Q8_0", 7.6),
-    ("mistral-7b", "MISTRAL-7B-V0.3", "Mistral-7B-Instruct-v0.3-Q8_0.gguf", "Q8_0", 7.2),
     ("deepseek-r1-7b", "R1-DISTILL-QWEN-7B", "DeepSeek-R1-Distill-Qwen-7B-Q8_0.gguf", "Q8_0", 7.6),
+    ("mistral-7b", "MISTRAL-7B-V0.3", "Mistral-7B-Instruct-v0.3-Q8_0.gguf", "Q8_0", 7.2),
 ]
 
 

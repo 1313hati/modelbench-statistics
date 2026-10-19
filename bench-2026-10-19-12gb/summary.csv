@@ -1,12 +1,12 @@
-slug,model,params_b,quant,gguf_gib,tasks,samples,score_pct,solved,completion_tokens_per_task,status
-qwen3-14b,Qwen3-14B,14.8,Q4_K_M,8.38,12,12,75.99,6,9146,complete
-qwen3-8b,Qwen3-8B,8.2,Q8_0,8.11,12,12,52.9,3,8496,complete
-qwen3-4b,Qwen3-4B-Instruct-2507,4.0,Q4_K_M,,12,24,46.91,2,733,complete
-qwen25coder-7b,Qwen2.5-Coder-7B-Instruct,7.6,Q8_0,7.54,12,12,41.45,1,385,complete
-gemma3-12b,Gemma-3-12B-IT,12.2,Q5_K_M,7.87,12,12,36.73,1,630,complete
-gemma3-4b,Gemma-3-4B-IT,4.3,Q4_K_M,,12,24,36.7,1,542,complete
-qwen25-14b,Qwen2.5-14B-Instruct,14.7,Q4_K_M,8.37,12,12,36.62,1,502,complete
-llama31-8b,Llama-3.1-8B-Instruct,8.0,Q8_0,7.95,12,12,32.41,1,445,complete
-mistral-7b,Mistral-7B-Instruct-v0.3,7.2,Q8_0,7.17,12,12,10.61,0,551,complete
-deepseek-r1-7b,DeepSeek-R1-Distill-Qwen-7B,7.6,Q8_0,7.54,1,1,100.0,1,5981,partial (1/12)
-qwen38-27b,"Qwen3.8-27B (reference, 24 GB card)",27.0,UD-Q4_K_XL,,1,1,100.0,1,4157,partial (1/12)
+slug,model,params_b,quant,tasks,samples,score_pct,solved,completion_tokens_per_task,status
+qwen3-14b,Qwen3-14B,14.8,Q4_K_M,12,12,75.99,6,9146,complete
+qwen3-8b,Qwen3-8B,8.2,Q8_0,12,12,52.9,3,8496,complete
+qwen3-4b,Qwen3-4B-Instruct-2507,4.0,Q4_K_M,12,24,46.91,2,733,complete
+qwen25coder-7b,Qwen2.5-Coder-7B-Instruct,7.6,Q8_0,12,12,41.45,1,385,complete
+gemma3-12b,Gemma-3-12B-IT,12.2,Q5_K_M,12,12,36.73,1,630,complete
+gemma3-4b,Gemma-3-4B-IT,4.3,Q4_K_M,12,24,36.7,1,542,complete
+qwen25-14b,Qwen2.5-14B-Instruct,14.7,Q4_K_M,12,12,36.62,1,502,complete
+llama31-8b,Llama-3.1-8B-Instruct,8.0,Q8_0,12,12,32.41,1,445,complete
+deepseek-r1-7b,DeepSeek-R1-Distill-Qwen-7B,7.6,Q8_0,12,12,31.82,2,9584,complete
+mistral-7b,Mistral-7B-Instruct-v0.3,7.2,Q8_0,12,12,10.61,0,551,complete
+qwen38-27b,"Qwen3.8-27B (reference, 24 GB card)",27.0,UD-Q4_K_XL,1,1,100.0,1,4157,partial (1/12)

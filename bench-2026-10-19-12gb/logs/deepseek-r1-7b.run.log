@@ -5,3 +5,23 @@ output   /home/hati/.hermes/cache/scratch/smallbench/runs/deepseek-r1-7b
 
 target adhoc @ http://127.0.0.1:8081/v1 → served as 'deepseek-r1-7b'
 [  1/12] t01_weighted_jobs        s1   12/12  100.0%   152.0s   40 t/s
+[  2/12] t02_text_justify         s1   10/18   55.6%   429.4s   36 t/s  repair 0/18 [cap-retry]
+[  3/12] t03_json_parser          s1    0/1     0.0%   394.8s   37 t/s  repair 0/1 [cap-retry]
+[  4/12] t04_sql_report           s1    1/4    25.0%   149.6s   40 t/s  repair 2/34 [cap-retry]
+[  5/12] t05_async_pool           s1    0/1     0.0%   296.2s   38 t/s  repair 2/12 [cap-retry]
+[  6/12] t06_repo_bugfix          s1   14/25   56.0%   184.3s   38 t/s  repair 0/1
+[  7/12] t07_thread_queue         s1    0/1     0.0%   225.7s   39 t/s  repair 0/1 [cap-retry]
+[  8/12] t08_code_review          s1    4/14   28.6%    43.8s   40 t/s  repair 0/14
+[  9/12] t09_csv_rfc4180          s1    0/1     0.0%   439.3s   36 t/s  repair 0/1 [cap-retry]
+[ 10/12] t10_pairs_refactor       s1   13/13  100.0%    56.5s   41 t/s
+[ 11/12] t11_varint_protocol      s1    0/1     0.0%   439.6s   36 t/s  repair 0/32 [cap-retry]
+[ 12/12] t12_ledger_feature       s1    0/25    0.0%   268.7s   37 t/s  repair 0/25 [no-result]
+run complete: 12 new record(s), 12 total, 0 error(s), 1h 21m → /home/hati/.hermes/cache/scratch/smallbench/runs/deepseek-r1-7b
+
+run    first  final  solved  records  med call  tok/s   tokens
+-----  -----  -----  ------  -------  --------  -----  -------
+adhoc  30.4%  31.8%   16.7%    12/12    247.2s   38.0  185,817
+
+report   /home/hati/.hermes/cache/scratch/smallbench/runs/deepseek-r1-7b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/smallbench/runs/deepseek-r1-7b/summary.json
+html     /home/hati/.hermes/cache/scratch/smallbench/runs/deepseek-r1-7b/REPORT.html

@@ -122,3 +122,6 @@ ready DeepSeek-R1-Distill-Qwen-7B-Q8_0.gguf 8098524896
 deepseek-r1-7b: up on 8081 (CUDA1) 21:38:51
 mistral-7b: up on 8080 (CUDA0) 21:38:53
 mistral-7b: exit=0 2026-10-19T21:43:53+02:00
+deepseek-r1-7b: exit=0 2026-10-19T23:00:29+02:00
+WAVE DONE mistral-7b deepseek-r1-7b 2026-10-19T23:00:30+02:00
+PANEL DONE 2026-10-19T23:00:30+02:00
