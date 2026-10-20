@@ -3,6 +3,9 @@
 Raw results and logs from [ModelBench](https://github.com/1313hati/modelbench) runs on local
 hardware. Every number is derived from a committed `results.jsonl` — no estimates.
 
+What this is, why the constraint is the instrument, and the rules every post and document
+here follows: [POSITIONING.md](POSITIONING.md).
+
 | run | what it covers |
 |---|---|
 | [bench-2026-10-19-12gb](bench-2026-10-19-12gb/) | Eight popular models, each fully on one 12 GB card at 16K context, largest quant that fits |
