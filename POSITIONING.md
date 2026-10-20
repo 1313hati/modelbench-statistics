@@ -10,6 +10,18 @@ fit, at what quantization, how slow is it, and is it good enough for real work.
 
 Everything in this repository is an attempt to answer that with evidence instead of vibes.
 
+## Why this exists
+
+Local inference is the only AI a person actually owns: the weights on their disk, the tokens
+on their machine, the data that never leaves the room. Most people never get that far — the
+tooling reads like a research project, the numbers they find were measured on hardware they
+will never touch, and the advice quietly assumes an API key and a credit card.
+
+This is the counterweight. Measured answers about models that run on hardware people already
+have, published so anyone can rerun them, argue with them, or use them to decide what to
+download tonight. Help people understand it, run it, and then own it. Open weights, real
+numbers, your own metal.
+
 ## The constraint is the instrument
 
 Every model must load **completely** into VRAM at 16,384 tokens of context, at the largest
