@@ -6,6 +6,7 @@ hardware. Every number is derived from a committed `results.jsonl` — no estima
 | run | what it covers |
 |---|---|
 | [bench-2026-10-19-12gb](bench-2026-10-19-12gb/) | Eight popular models, each fully on one 12 GB card at 16K context, largest quant that fits |
+| [bench-2026-10-20-fresh](bench-2026-10-20-fresh/) | Six October releases — LFM2.5 (1.2B to 24B-A2B) and Prism ML's ternary Bonsai 2 — five on one 12 GB card, the 24B MoE across both |
 
 Each run directory holds its method notes, `summary.csv`, the per-task matrix, the raw
 `results.jsonl` per model, the harness and server logs, the published plates, and the
