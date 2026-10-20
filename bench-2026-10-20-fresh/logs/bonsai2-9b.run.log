@@ -1,0 +1,27 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8080/v1 model=bonsai2-9b
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/freshbench/runs/bonsai2-9b
+
+target adhoc @ http://127.0.0.1:8080/v1 → served as 'bonsai2-9b'
+[  1/12] t01_weighted_jobs        s1   12/12  100.0%   155.5s   87 t/s [cap-retry]
+[  2/12] t02_text_justify         s1   17/18   94.4%   116.7s   88 t/s  repair 18/18 [cap-retry]
+[  3/12] t03_json_parser          s1    4/47    8.5%   186.1s   86 t/s  repair 0/47 [cap-retry]
+[  4/12] t04_sql_report           s1   39/42   92.9%   109.7s   88 t/s  repair 42/42 [cap-retry]
+[  5/12] t05_async_pool           s1    2/12   16.7%   186.6s   86 t/s  repair 0/1 [cap-retry]
+[  6/12] t06_repo_bugfix          s1   18/25   72.0%    69.3s   88 t/s  repair 16/25
+[  7/12] t07_thread_queue         s1    0/23    0.0%   115.2s   88 t/s  repair 0/23 [cap-retry] [no-result]
+[  8/12] t08_code_review          s1    8/14   57.1%    93.3s   88 t/s  repair 8/14
+[  9/12] t09_csv_rfc4180          s1    0/1     0.0%   186.6s   86 t/s  repair 0/1 [cap-retry]
+[ 10/12] t10_pairs_refactor       s1   13/13  100.0%     7.6s   93 t/s
+[ 11/12] t11_varint_protocol      s1    0/1     0.0%   191.9s   83 t/s  repair 0/1 [cap-retry]
+[ 12/12] t12_ledger_feature       s1    0/25    0.0%    18.9s   92 t/s  repair 0/25 [no-result]
+run complete: 12 new record(s), 12 total, 0 error(s), 59m 49.6s → /home/hati/.hermes/cache/scratch/freshbench/runs/bonsai2-9b
+
+run    first  final  solved  records  med call  tok/s   tokens
+-----  -----  -----  ------  -------  --------  -----  -------
+adhoc  45.1%  46.2%   16.7%    12/12    115.9s   87.9  296,927
+
+report   /home/hati/.hermes/cache/scratch/freshbench/runs/bonsai2-9b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/freshbench/runs/bonsai2-9b/summary.json
+html     /home/hati/.hermes/cache/scratch/freshbench/runs/bonsai2-9b/REPORT.html

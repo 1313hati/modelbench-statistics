@@ -1,0 +1,27 @@
+suite    core-v2 (12 tasks, 296 checks, digest a7e0e31bedd8)
+target   adhoc @ http://127.0.0.1:8080/v1 model=lfm25-8b-a1b
+samples  1   repair=True   order=sample   temp=1.0 top_p=0.95  seed=42
+output   /home/hati/.hermes/cache/scratch/freshbench/runs/lfm25-8b-a1b
+
+target adhoc @ http://127.0.0.1:8080/v1 → served as 'lfm25-8b-a1b'
+[  1/12] t01_weighted_jobs        s1   12/12  100.0%    11.3s  136 t/s
+[  2/12] t02_text_justify         s1    0/18    0.0%    17.6s  146 t/s  repair 0/18 [no-result]
+[  3/12] t03_json_parser          s1    0/1     0.0%   114.6s  139 t/s  repair 0/47 [cap-retry] [fence-unclosed]
+[  4/12] t04_sql_report           s1   36/42   85.7%    20.1s  147 t/s  repair 1/4
+[  5/12] t05_async_pool           s1    2/12   16.7%    68.9s  144 t/s  repair 2/12 [cap-retry]
+[  6/12] t06_repo_bugfix          s1   16/25   64.0%    47.4s  143 t/s  repair 14/25
+[  7/12] t07_thread_queue         s1    0/23    0.0%    38.7s  146 t/s  repair 0/23 [no-result]
+[  8/12] t08_code_review          s1    5/14   35.7%    19.8s  147 t/s  repair 0/14 [raw]
+[  9/12] t09_csv_rfc4180          s1    0/1     0.0%   114.0s  140 t/s  repair 4/33 [cap-retry]
+[ 10/12] t10_pairs_refactor       s1   13/13  100.0%     5.0s  150 t/s
+[ 11/12] t11_varint_protocol      s1    0/32    0.0%    64.8s  144 t/s  repair 0/32 [cap-retry] [no-result]
+[ 12/12] t12_ledger_feature       s1    0/1     0.0%    84.0s  141 t/s  repair 0/25 [cap-retry]
+run complete: 12 new record(s), 12 total, 0 error(s), 34m 25.8s → /home/hati/.hermes/cache/scratch/freshbench/runs/lfm25-8b-a1b
+
+run    first  final  solved  records  med call  tok/s   tokens
+-----  -----  -----  ------  -------  --------  -----  -------
+adhoc  33.5%  34.5%   16.7%    12/12     43.1s  143.8  233,046
+
+report   /home/hati/.hermes/cache/scratch/freshbench/runs/lfm25-8b-a1b/REPORT.md
+summary  /home/hati/.hermes/cache/scratch/freshbench/runs/lfm25-8b-a1b/summary.json
+html     /home/hati/.hermes/cache/scratch/freshbench/runs/lfm25-8b-a1b/REPORT.html

@@ -1,0 +1,474 @@
+{
+  "generated_at": "2026-10-20T00:23:30",
+  "modelbench": "2.1.0",
+  "title": "modelbench — lfm25-8b-a1b on core-v2",
+  "runs": [
+    {
+      "label": "adhoc",
+      "path": "/home/hati/.hermes/cache/scratch/freshbench/runs/lfm25-8b-a1b",
+      "target": {
+        "name": "adhoc",
+        "base_url": "http://127.0.0.1:8080/v1",
+        "model": "lfm25-8b-a1b",
+        "stream": true,
+        "timeout_s": 1800.0,
+        "generation": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": null,
+          "min_p": null,
+          "seed": 42,
+          "max_tokens": 8192,
+          "retry_cap": 16384
+        },
+        "extra_body": {},
+        "has_api_key": false,
+        "managed_server": false,
+        "pricing": {
+          "input_per_mtok": null,
+          "output_per_mtok": null
+        }
+      },
+      "served_id": "lfm25-8b-a1b",
+      "suite": {
+        "id": "core-v2",
+        "version": "2.0",
+        "digest": "a7e0e31bedd81364be8956d278dd5c45f4a1cd889d1df93775da69f96f2294ec",
+        "tasks": [
+          "t01_weighted_jobs",
+          "t02_text_justify",
+          "t03_json_parser",
+          "t04_sql_report",
+          "t05_async_pool",
+          "t06_repo_bugfix",
+          "t07_thread_queue",
+          "t08_code_review",
+          "t09_csv_rfc4180",
+          "t10_pairs_refactor",
+          "t11_varint_protocol",
+          "t12_ledger_feature"
+        ],
+        "categories": [
+          "algorithms",
+          "async",
+          "binary",
+          "concurrency",
+          "longcontext",
+          "parsing",
+          "refactor",
+          "repo",
+          "review",
+          "spec",
+          "sql"
+        ],
+        "checks": 296
+      },
+      "metrics": {
+        "records": 12,
+        "tasks": 12,
+        "samples": 1,
+        "expected": 12,
+        "missing": [],
+        "duplicates": [],
+        "first_score": 0.335075,
+        "first_sd": 0.4212779952931102,
+        "first_ci": [
+          0.11309166666666666,
+          0.5766666666666667
+        ],
+        "final_score": 0.345175,
+        "final_sd": 0.41390268756403026,
+        "final_ci": [
+          0.12967499999999998,
+          0.5830916666666667
+        ],
+        "assertions_passed": 84,
+        "assertions_total": 194,
+        "assertion_rate": 0.4329896907216495,
+        "solved_first": 0.16666666666666666,
+        "solved_final": 0.16666666666666666,
+        "repairs": 10,
+        "improved": 1,
+        "repaired_solved": 0,
+        "median_call_s": 43.08,
+        "p90_call_s": 113.96,
+        "median_tps": 143.75,
+        "median_ttft": 0.133,
+        "median_tokens": 6178.5,
+        "total_tokens": 233046,
+        "input_tokens": 29300,
+        "pricing": null,
+        "cost_usd": null,
+        "cost_per_solved_usd": null,
+        "wall_s": 2064.12,
+        "truncated": 2,
+        "no_result": 3,
+        "sources": {
+          "fence": 7,
+          "fence-unclosed": 1,
+          "markers": 2,
+          "raw": 1,
+          "none": 1
+        },
+        "errors": 0,
+        "unstable": 0,
+        "unstable_ids": [],
+        "sample_spread": 0.0
+      },
+      "tasks": {
+        "t01_weighted_jobs": {
+          "category": "algorithms",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            12,
+            12
+          ],
+          "median_s": 11.26,
+          "tokens": 1348
+        },
+        "t02_text_justify": {
+          "category": "spec",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            18
+          ],
+          "median_s": 17.59,
+          "tokens": 2556
+        },
+        "t03_json_parser": {
+          "category": "parsing",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 114.59,
+          "tokens": 15941
+        },
+        "t04_sql_report": {
+          "category": "sql",
+          "n": 1,
+          "first": 0.8571,
+          "final": 0.8571,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            36,
+            42
+          ],
+          "median_s": 20.1,
+          "tokens": 2931
+        },
+        "t05_async_pool": {
+          "category": "async",
+          "n": 1,
+          "first": 0.1667,
+          "final": 0.1667,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            2,
+            12
+          ],
+          "median_s": 68.88,
+          "tokens": 9877
+        },
+        "t06_repo_bugfix": {
+          "category": "repo",
+          "n": 1,
+          "first": 0.64,
+          "final": 0.64,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            16,
+            25
+          ],
+          "median_s": 47.42,
+          "tokens": 6731
+        },
+        "t07_thread_queue": {
+          "category": "concurrency",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            23
+          ],
+          "median_s": 38.74,
+          "tokens": 5626
+        },
+        "t08_code_review": {
+          "category": "review",
+          "n": 1,
+          "first": 0.3571,
+          "final": 0.3571,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            5,
+            14
+          ],
+          "median_s": 19.8,
+          "tokens": 2868
+        },
+        "t09_csv_rfc4180": {
+          "category": "parsing",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.1212,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 113.96,
+          "tokens": 15962
+        },
+        "t10_pairs_refactor": {
+          "category": "refactor",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            13,
+            13
+          ],
+          "median_s": 5.04,
+          "tokens": 728
+        },
+        "t11_varint_protocol": {
+          "category": "binary",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            32
+          ],
+          "median_s": 64.84,
+          "tokens": 9326
+        },
+        "t12_ledger_feature": {
+          "category": "longcontext",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 84.05,
+          "tokens": 11860
+        }
+      },
+      "categories": {
+        "algorithms": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "async": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.1667,
+          "final": 0.1667
+        },
+        "binary": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "concurrency": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "longcontext": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "parsing": {
+          "n": 2,
+          "tasks": 2,
+          "first": 0.0,
+          "final": 0.0606
+        },
+        "refactor": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "repo": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.64,
+          "final": 0.64
+        },
+        "review": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.3571,
+          "final": 0.3571
+        },
+        "spec": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "sql": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.8571,
+          "final": 0.8571
+        }
+      },
+      "signatures": [
+        {
+          "name": "28 nights discount",
+          "records": 1,
+          "tasks": [
+            "t06_repo_bugfix"
+          ],
+          "example": "28 nights discount: AssertionError: got 34000 != want 64000",
+          "task_count": 1
+        },
+        {
+          "name": "28 nights total",
+          "records": 1,
+          "tasks": [
+            "t06_repo_bugfix"
+          ],
+          "example": "28 nights total: AssertionError: got 333200 != want 276480",
+          "task_count": 1
+        },
+        {
+          "name": "back-to-back after is allowed",
+          "records": 1,
+          "tasks": [
+            "t06_repo_bugfix"
+          ],
+          "example": "back-to-back after is allowed: ConflictError: room A is already booked",
+          "task_count": 1
+        },
+        {
+          "name": "back-to-back before is allowed",
+          "records": 1,
+          "tasks": [
+            "t06_repo_bugfix"
+          ],
+          "example": "back-to-back before is allowed: ConflictError: room A is already booked",
+          "task_count": 1
+        },
+        {
+          "name": "basic",
+          "records": 1,
+          "tasks": [
+            "t04_sql_report"
+          ],
+          "example": "basic: row 1 headcount: AssertionError: got 4 != want 3",
+          "task_count": 1
+        },
+        {
+          "name": "calls fn with item and index",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "calls fn with item and index: TypeError: Cannot read properties of undefined (reading 'retries')",
+          "task_count": 1
+        },
+        {
+          "name": "does not mutate items",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "does not mutate items: TypeError: Cannot read properties of undefined (reading 'retries')",
+          "task_count": 1
+        },
+        {
+          "name": "empty resolves [] without calls",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "empty resolves [] without calls: TypeError: Cannot read properties of undefined (reading 'retries')",
+          "task_count": 1
+        },
+        {
+          "name": "exhausted retries rejects with last error",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "exhausted retries rejects with last error: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
+          "task_count": 1
+        },
+        {
+          "name": "fail-fast stops starting new items",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "fail-fast stops starting new items: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:",
+          "task_count": 1
+        },
+        {
+          "name": "false-positive pricing.py",
+          "records": 1,
+          "tasks": [
+            "t08_code_review"
+          ],
+          "example": "false-positive pricing.py:6",
+          "task_count": 1
+        },
+        {
+          "name": "half-up discount and tax",
+          "records": 1,
+          "tasks": [
+            "t06_repo_bugfix"
+          ],
+          "example": "half-up discount and tax: AssertionError: got 721 != want 714",
+          "task_count": 1
+        }
+      ]
+    }
+  ],
+  "pairwise": [],
+  "evidence": {
+    "samples_required": 3,
+    "samples_per_task": 1,
+    "provisional": false
+  }
+}

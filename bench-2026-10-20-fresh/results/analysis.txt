@@ -1,0 +1,25 @@
+model               score  solved  tok/s  tok/task
+lfm25-8b-a1b        34.5%   2/12   144.1    15,420
+lfm25-2.6b          44.8%   2/12    95.2    22,901
+lfm25-1.2b          12.0%   0/12   221.0     2,987
+lfm25-24b-a2b       72.0%   6/12   118.2    18,665
+bonsai2-9b          46.2%   4/12    88.2    18,419
+bonsai2-4b          45.8%   3/12   128.2    11,119
+
+per task (%):
+task                       lfm25-8b-a1b   lfm25-2.6b   lfm25-1.2b lfm25-24b-a2   bonsai2-9b   bonsai2-4b
+t01_weighted_jobs                  100          100            0          100          100          100 
+t02_text_justify                     0           94           33          100          100          100 
+t03_json_parser                      0            0            0            0            9            0 
+t04_sql_report                      86           25           32          100          100           90 
+t05_async_pool                      17           17           17           83           17            0 
+t06_repo_bugfix                     64           56            0           96           72           88 
+t07_thread_queue                     0           74            0            0            0            0 
+t08_code_review                     36           71            0          100           57           71 
+t09_csv_rfc4180                     12            0            0           85            0            0 
+t10_pairs_refactor                 100          100           62          100          100          100 
+t11_varint_protocol                  0            0            0            0            0            0 
+t12_ledger_feature                   0            0            0          100            0            0 
+
+failed by every model: t03_json_parser, t11_varint_protocol
+leader: lfm25-24b-a2b 72.0%

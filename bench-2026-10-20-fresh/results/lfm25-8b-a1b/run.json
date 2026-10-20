@@ -1,0 +1,83 @@
+{
+  "record_version": 2,
+  "modelbench": "2.1.0",
+  "started_at": "2026-10-19T23:49:04",
+  "target": {
+    "name": "adhoc",
+    "base_url": "http://127.0.0.1:8080/v1",
+    "model": "lfm25-8b-a1b",
+    "stream": true,
+    "timeout_s": 1800.0,
+    "generation": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": null,
+      "min_p": null,
+      "seed": 42,
+      "max_tokens": 8192,
+      "retry_cap": 16384
+    },
+    "extra_body": {},
+    "has_api_key": false,
+    "managed_server": false,
+    "pricing": {
+      "input_per_mtok": null,
+      "output_per_mtok": null
+    }
+  },
+  "suite": {
+    "id": "core-v2",
+    "version": "2.0",
+    "digest": "a7e0e31bedd81364be8956d278dd5c45f4a1cd889d1df93775da69f96f2294ec",
+    "tasks": [
+      "t01_weighted_jobs",
+      "t02_text_justify",
+      "t03_json_parser",
+      "t04_sql_report",
+      "t05_async_pool",
+      "t06_repo_bugfix",
+      "t07_thread_queue",
+      "t08_code_review",
+      "t09_csv_rfc4180",
+      "t10_pairs_refactor",
+      "t11_varint_protocol",
+      "t12_ledger_feature"
+    ],
+    "categories": [
+      "algorithms",
+      "async",
+      "binary",
+      "concurrency",
+      "longcontext",
+      "parsing",
+      "refactor",
+      "repo",
+      "review",
+      "spec",
+      "sql"
+    ],
+    "checks": 296
+  },
+  "samples": 1,
+  "repair": true,
+  "order": "sample",
+  "generation": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": null,
+    "min_p": null,
+    "seed": 42,
+    "max_tokens": 8192,
+    "retry_cap": 16384
+  },
+  "environment": {
+    "python": "3.14.7",
+    "platform": "linux"
+  },
+  "finished_at": "2026-10-20T00:23:30",
+  "status": "finished",
+  "elapsed_s": 2065.8,
+  "records": 12,
+  "errors": 0,
+  "skipped_tasks": []
+}

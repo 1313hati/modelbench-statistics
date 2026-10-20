@@ -1,0 +1,411 @@
+{
+  "generated_at": "2026-10-20T02:36:11",
+  "modelbench": "2.1.0",
+  "title": "modelbench — lfm25-24b-a2b on core-v2",
+  "runs": [
+    {
+      "label": "adhoc",
+      "path": "/home/hati/.hermes/cache/scratch/freshbench/runs/lfm25-24b-a2b",
+      "target": {
+        "name": "adhoc",
+        "base_url": "http://127.0.0.1:8080/v1",
+        "model": "lfm25-24b-a2b",
+        "stream": true,
+        "timeout_s": 1800.0,
+        "generation": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": null,
+          "min_p": null,
+          "seed": 42,
+          "max_tokens": 8192,
+          "retry_cap": 16384
+        },
+        "extra_body": {},
+        "has_api_key": false,
+        "managed_server": false,
+        "pricing": {
+          "input_per_mtok": null,
+          "output_per_mtok": null
+        }
+      },
+      "served_id": "lfm25-24b-a2b",
+      "suite": {
+        "id": "core-v2",
+        "version": "2.0",
+        "digest": "a7e0e31bedd81364be8956d278dd5c45f4a1cd889d1df93775da69f96f2294ec",
+        "tasks": [
+          "t01_weighted_jobs",
+          "t02_text_justify",
+          "t03_json_parser",
+          "t04_sql_report",
+          "t05_async_pool",
+          "t06_repo_bugfix",
+          "t07_thread_queue",
+          "t08_code_review",
+          "t09_csv_rfc4180",
+          "t10_pairs_refactor",
+          "t11_varint_protocol",
+          "t12_ledger_feature"
+        ],
+        "categories": [
+          "algorithms",
+          "async",
+          "binary",
+          "concurrency",
+          "longcontext",
+          "parsing",
+          "refactor",
+          "repo",
+          "review",
+          "spec",
+          "sql"
+        ],
+        "checks": 296
+      },
+      "metrics": {
+        "records": 12,
+        "tasks": 12,
+        "samples": 1,
+        "expected": 12,
+        "missing": [],
+        "duplicates": [],
+        "first_score": 0.58,
+        "first_sd": 0.5121079431668146,
+        "first_ci": [
+          0.33,
+          0.8333333333333334
+        ],
+        "final_score": 0.72015,
+        "final_sd": 0.43823497951752693,
+        "final_ci": [
+          0.47475,
+          0.9469666666666666
+        ],
+        "assertions_passed": 148,
+        "assertions_total": 176,
+        "assertion_rate": 0.8409090909090909,
+        "solved_first": 0.5,
+        "solved_final": 0.5,
+        "repairs": 6,
+        "improved": 2,
+        "repaired_solved": 0,
+        "median_call_s": 92.62,
+        "p90_call_s": 137.18,
+        "median_tps": 118.45,
+        "median_ttft": 0.0775,
+        "median_tokens": 10919.0,
+        "total_tokens": 315662,
+        "input_tokens": 24733,
+        "pricing": null,
+        "cost_usd": null,
+        "cost_per_solved_usd": null,
+        "wall_s": 2672.46,
+        "truncated": 4,
+        "no_result": 1,
+        "sources": {
+          "fence": 6,
+          "none": 3,
+          "headings": 1,
+          "fence-unclosed": 1,
+          "markers": 1
+        },
+        "errors": 0,
+        "unstable": 0,
+        "unstable_ids": [],
+        "sample_spread": 0.0
+      },
+      "tasks": {
+        "t01_weighted_jobs": {
+          "category": "algorithms",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            12,
+            12
+          ],
+          "median_s": 59.24,
+          "tokens": 7174
+        },
+        "t02_text_justify": {
+          "category": "spec",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            18,
+            18
+          ],
+          "median_s": 101.48,
+          "tokens": 12005
+        },
+        "t03_json_parser": {
+          "category": "parsing",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 136.63,
+          "tokens": 15940
+        },
+        "t04_sql_report": {
+          "category": "sql",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            42,
+            42
+          ],
+          "median_s": 32.17,
+          "tokens": 3910
+        },
+        "t05_async_pool": {
+          "category": "async",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.8333,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 112.62,
+          "tokens": 13265
+        },
+        "t06_repo_bugfix": {
+          "category": "repo",
+          "n": 1,
+          "first": 0.96,
+          "final": 0.96,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            24,
+            25
+          ],
+          "median_s": 83.76,
+          "tokens": 9833
+        },
+        "t07_thread_queue": {
+          "category": "concurrency",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            23
+          ],
+          "median_s": 137.01,
+          "tokens": 15921
+        },
+        "t08_code_review": {
+          "category": "review",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            14,
+            14
+          ],
+          "median_s": 79.7,
+          "tokens": 9494
+        },
+        "t09_csv_rfc4180": {
+          "category": "parsing",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.8485,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 137.5,
+          "tokens": 15961
+        },
+        "t10_pairs_refactor": {
+          "category": "refactor",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            13,
+            13
+          ],
+          "median_s": 26.04,
+          "tokens": 3189
+        },
+        "t11_varint_protocol": {
+          "category": "binary",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 137.18,
+          "tokens": 15982
+        },
+        "t12_ledger_feature": {
+          "category": "longcontext",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            25,
+            25
+          ],
+          "median_s": 80.73,
+          "tokens": 9485
+        }
+      },
+      "categories": {
+        "algorithms": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "async": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.8333
+        },
+        "binary": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "concurrency": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "longcontext": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "parsing": {
+          "n": 2,
+          "tasks": 2,
+          "first": 0.0,
+          "final": 0.42425
+        },
+        "refactor": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "repo": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.96,
+          "final": 0.96
+        },
+        "review": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "spec": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "sql": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        }
+      },
+      "signatures": [
+        {
+          "name": "half-up discount and tax",
+          "records": 1,
+          "tasks": [
+            "t06_repo_bugfix"
+          ],
+          "example": "half-up discount and tax: AssertionError: got 715 != want 714",
+          "task_count": 1
+        },
+        {
+          "name": "import and parse_json exists",
+          "records": 1,
+          "tasks": [
+            "t03_json_parser"
+          ],
+          "example": "import and parse_json exists: KeyError: 'parse_json'",
+          "task_count": 1
+        },
+        {
+          "name": "import encode_varints/decode_varints",
+          "records": 1,
+          "tasks": [
+            "t11_varint_protocol"
+          ],
+          "example": "import encode_varints/decode_varints: KeyError: 'encode_varints'",
+          "task_count": 1
+        },
+        {
+          "name": "import parse_csv and write_csv",
+          "records": 1,
+          "tasks": [
+            "t09_csv_rfc4180"
+          ],
+          "example": "import parse_csv and write_csv: KeyError: 'parse_csv'",
+          "task_count": 1
+        },
+        {
+          "name": "load module",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "load module: await is only valid in async functions and the top level bodies of modules",
+          "task_count": 1
+        }
+      ]
+    }
+  ],
+  "pairwise": [],
+  "evidence": {
+    "samples_required": 3,
+    "samples_per_task": 1,
+    "provisional": false
+  }
+}

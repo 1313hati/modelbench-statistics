@@ -1,0 +1,472 @@
+{
+  "generated_at": "2026-10-20T01:28:45",
+  "modelbench": "2.1.0",
+  "title": "modelbench — bonsai2-9b on core-v2",
+  "runs": [
+    {
+      "label": "adhoc",
+      "path": "/home/hati/.hermes/cache/scratch/freshbench/runs/bonsai2-9b",
+      "target": {
+        "name": "adhoc",
+        "base_url": "http://127.0.0.1:8080/v1",
+        "model": "bonsai2-9b",
+        "stream": true,
+        "timeout_s": 1800.0,
+        "generation": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": null,
+          "min_p": null,
+          "seed": 42,
+          "max_tokens": 8192,
+          "retry_cap": 16384
+        },
+        "extra_body": {},
+        "has_api_key": false,
+        "managed_server": false,
+        "pricing": {
+          "input_per_mtok": null,
+          "output_per_mtok": null
+        }
+      },
+      "served_id": "bonsai2-9b",
+      "suite": {
+        "id": "core-v2",
+        "version": "2.0",
+        "digest": "a7e0e31bedd81364be8956d278dd5c45f4a1cd889d1df93775da69f96f2294ec",
+        "tasks": [
+          "t01_weighted_jobs",
+          "t02_text_justify",
+          "t03_json_parser",
+          "t04_sql_report",
+          "t05_async_pool",
+          "t06_repo_bugfix",
+          "t07_thread_queue",
+          "t08_code_review",
+          "t09_csv_rfc4180",
+          "t10_pairs_refactor",
+          "t11_varint_protocol",
+          "t12_ledger_feature"
+        ],
+        "categories": [
+          "algorithms",
+          "async",
+          "binary",
+          "concurrency",
+          "longcontext",
+          "parsing",
+          "refactor",
+          "repo",
+          "review",
+          "spec",
+          "sql"
+        ],
+        "checks": 296
+      },
+      "metrics": {
+        "records": 12,
+        "tasks": 12,
+        "samples": 1,
+        "expected": 12,
+        "missing": [],
+        "duplicates": [],
+        "first_score": 0.45135,
+        "first_sd": 0.4461467665160505,
+        "first_ci": [
+          0.21079166666666668,
+          0.7037
+        ],
+        "final_score": 0.4619333333333333,
+        "final_sd": 0.4591830697174619,
+        "final_ci": [
+          0.21873333333333334,
+          0.721375
+        ],
+        "assertions_passed": 113,
+        "assertions_total": 233,
+        "assertion_rate": 0.48497854077253216,
+        "solved_first": 0.16666666666666666,
+        "solved_final": 0.3333333333333333,
+        "repairs": 10,
+        "improved": 2,
+        "repaired_solved": 2,
+        "median_call_s": 115.92,
+        "p90_call_s": 186.64,
+        "median_tps": 87.9,
+        "median_ttft": 0.1925,
+        "median_tokens": 10225.0,
+        "total_tokens": 296927,
+        "input_tokens": 29142,
+        "pricing": null,
+        "cost_usd": null,
+        "cost_per_solved_usd": null,
+        "wall_s": 3589.08,
+        "truncated": 4,
+        "no_result": 2,
+        "sources": {
+          "fence": 7,
+          "none": 3,
+          "markers": 2
+        },
+        "errors": 0,
+        "unstable": 0,
+        "unstable_ids": [],
+        "sample_spread": 0.0
+      },
+      "tasks": {
+        "t01_weighted_jobs": {
+          "category": "algorithms",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            12,
+            12
+          ],
+          "median_s": 155.51,
+          "tokens": 13487
+        },
+        "t02_text_justify": {
+          "category": "spec",
+          "n": 1,
+          "first": 0.9444,
+          "final": 1.0,
+          "solved_first": 0.0,
+          "solved_final": 1.0,
+          "assertions": [
+            17,
+            18
+          ],
+          "median_s": 116.66,
+          "tokens": 10273
+        },
+        "t03_json_parser": {
+          "category": "parsing",
+          "n": 1,
+          "first": 0.0851,
+          "final": 0.0851,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            4,
+            47
+          ],
+          "median_s": 186.11,
+          "tokens": 15931
+        },
+        "t04_sql_report": {
+          "category": "sql",
+          "n": 1,
+          "first": 0.9286,
+          "final": 1.0,
+          "solved_first": 0.0,
+          "solved_final": 1.0,
+          "assertions": [
+            39,
+            42
+          ],
+          "median_s": 109.69,
+          "tokens": 9695
+        },
+        "t05_async_pool": {
+          "category": "async",
+          "n": 1,
+          "first": 0.1667,
+          "final": 0.1667,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            2,
+            12
+          ],
+          "median_s": 186.64,
+          "tokens": 15985
+        },
+        "t06_repo_bugfix": {
+          "category": "repo",
+          "n": 1,
+          "first": 0.72,
+          "final": 0.72,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            18,
+            25
+          ],
+          "median_s": 69.28,
+          "tokens": 5966
+        },
+        "t07_thread_queue": {
+          "category": "concurrency",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            23
+          ],
+          "median_s": 115.18,
+          "tokens": 10177
+        },
+        "t08_code_review": {
+          "category": "review",
+          "n": 1,
+          "first": 0.5714,
+          "final": 0.5714,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            8,
+            14
+          ],
+          "median_s": 93.29,
+          "tokens": 8159
+        },
+        "t09_csv_rfc4180": {
+          "category": "parsing",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 186.61,
+          "tokens": 15952
+        },
+        "t10_pairs_refactor": {
+          "category": "refactor",
+          "n": 1,
+          "first": 1.0,
+          "final": 1.0,
+          "solved_first": 1.0,
+          "solved_final": 1.0,
+          "assertions": [
+            13,
+            13
+          ],
+          "median_s": 7.62,
+          "tokens": 667
+        },
+        "t11_varint_protocol": {
+          "category": "binary",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 191.91,
+          "tokens": 15958
+        },
+        "t12_ledger_feature": {
+          "category": "longcontext",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            25
+          ],
+          "median_s": 18.9,
+          "tokens": 1634
+        }
+      },
+      "categories": {
+        "algorithms": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "async": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.1667,
+          "final": 0.1667
+        },
+        "binary": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "concurrency": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "longcontext": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "parsing": {
+          "n": 2,
+          "tasks": 2,
+          "first": 0.04255,
+          "final": 0.04255
+        },
+        "refactor": {
+          "n": 1,
+          "tasks": 1,
+          "first": 1.0,
+          "final": 1.0
+        },
+        "repo": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.72,
+          "final": 0.72
+        },
+        "review": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.5714,
+          "final": 0.5714
+        },
+        "spec": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.9444,
+          "final": 1.0
+        },
+        "sql": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.9286,
+          "final": 1.0
+        }
+      },
+      "signatures": [
+        {
+          "name": "28 nights discount",
+          "records": 1,
+          "tasks": [
+            "t06_repo_bugfix"
+          ],
+          "example": "28 nights discount: AssertionError: got 32000 != want 64000",
+          "task_count": 1
+        },
+        {
+          "name": "28 nights total",
+          "records": 1,
+          "tasks": [
+            "t06_repo_bugfix"
+          ],
+          "example": "28 nights total: AssertionError: got 311040 != want 276480",
+          "task_count": 1
+        },
+        {
+          "name": "array",
+          "records": 1,
+          "tasks": [
+            "t03_json_parser"
+          ],
+          "example": "array: AssertionError: got None != want [1, 2, 3]",
+          "task_count": 1
+        },
+        {
+          "name": "bare fraction",
+          "records": 1,
+          "tasks": [
+            "t03_json_parser"
+          ],
+          "example": "bare fraction: AssertionError: did not raise ValueError",
+          "task_count": 1
+        },
+        {
+          "name": "basic",
+          "records": 1,
+          "tasks": [
+            "t04_sql_report"
+          ],
+          "example": "basic: row 1 headcount: AssertionError: got 4 != want 3",
+          "task_count": 1
+        },
+        {
+          "name": "calls fn with item and index",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "calls fn with item and index: TypeError: mapRetry is not a function",
+          "task_count": 1
+        },
+        {
+          "name": "does not mutate items",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "does not mutate items: TypeError: mapRetry is not a function",
+          "task_count": 1
+        },
+        {
+          "name": "duplicate keys last wins",
+          "records": 1,
+          "tasks": [
+            "t03_json_parser"
+          ],
+          "example": "duplicate keys last wins: AssertionError: got None != want {'a': 2}",
+          "task_count": 1
+        },
+        {
+          "name": "empty array",
+          "records": 1,
+          "tasks": [
+            "t03_json_parser"
+          ],
+          "example": "empty array: AssertionError: got None != want []",
+          "task_count": 1
+        },
+        {
+          "name": "empty document",
+          "records": 1,
+          "tasks": [
+            "t03_json_parser"
+          ],
+          "example": "empty document: AssertionError: did not raise ValueError",
+          "task_count": 1
+        },
+        {
+          "name": "empty object",
+          "records": 1,
+          "tasks": [
+            "t03_json_parser"
+          ],
+          "example": "empty object: AssertionError: got None != want {}",
+          "task_count": 1
+        },
+        {
+          "name": "empty resolves [] without calls",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "empty resolves [] without calls: TypeError: mapRetry is not a function",
+          "task_count": 1
+        }
+      ]
+    }
+  ],
+  "pairwise": [],
+  "evidence": {
+    "samples_required": 3,
+    "samples_per_task": 1,
+    "provisional": false
+  }
+}

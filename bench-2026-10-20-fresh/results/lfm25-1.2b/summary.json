@@ -1,0 +1,471 @@
+{
+  "generated_at": "2026-10-20T00:25:31",
+  "modelbench": "2.1.0",
+  "title": "modelbench — lfm25-1.2b on core-v2",
+  "runs": [
+    {
+      "label": "adhoc",
+      "path": "/home/hati/.hermes/cache/scratch/freshbench/runs/lfm25-1.2b",
+      "target": {
+        "name": "adhoc",
+        "base_url": "http://127.0.0.1:8080/v1",
+        "model": "lfm25-1.2b",
+        "stream": true,
+        "timeout_s": 1800.0,
+        "generation": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": null,
+          "min_p": null,
+          "seed": 42,
+          "max_tokens": 8192,
+          "retry_cap": 16384
+        },
+        "extra_body": {},
+        "has_api_key": false,
+        "managed_server": false,
+        "pricing": {
+          "input_per_mtok": null,
+          "output_per_mtok": null
+        }
+      },
+      "served_id": "lfm25-1.2b",
+      "suite": {
+        "id": "core-v2",
+        "version": "2.0",
+        "digest": "a7e0e31bedd81364be8956d278dd5c45f4a1cd889d1df93775da69f96f2294ec",
+        "tasks": [
+          "t01_weighted_jobs",
+          "t02_text_justify",
+          "t03_json_parser",
+          "t04_sql_report",
+          "t05_async_pool",
+          "t06_repo_bugfix",
+          "t07_thread_queue",
+          "t08_code_review",
+          "t09_csv_rfc4180",
+          "t10_pairs_refactor",
+          "t11_varint_protocol",
+          "t12_ledger_feature"
+        ],
+        "categories": [
+          "algorithms",
+          "async",
+          "binary",
+          "concurrency",
+          "longcontext",
+          "parsing",
+          "refactor",
+          "repo",
+          "review",
+          "spec",
+          "sql"
+        ],
+        "checks": 296
+      },
+      "metrics": {
+        "records": 12,
+        "tasks": 12,
+        "samples": 1,
+        "expected": 12,
+        "missing": [],
+        "duplicates": [],
+        "first_score": 0.08600833333333334,
+        "first_sd": 0.18592198979109165,
+        "first_ci": [
+          0.0,
+          0.20246666666666666
+        ],
+        "final_score": 0.11990833333333333,
+        "final_sd": 0.20219502043294435,
+        "final_ci": [
+          0.026958333333333334,
+          0.23980833333333332
+        ],
+        "assertions_passed": 11,
+        "assertions_total": 79,
+        "assertion_rate": 0.13924050632911392,
+        "solved_first": 0.0,
+        "solved_final": 0.0,
+        "repairs": 12,
+        "improved": 2,
+        "repaired_solved": 0,
+        "median_call_s": 2.0549999999999997,
+        "p90_call_s": 4.17,
+        "median_tps": 221.75,
+        "median_ttft": 0.0495,
+        "median_tokens": 444.5,
+        "total_tokens": 10208,
+        "input_tokens": 25638,
+        "pricing": null,
+        "cost_usd": null,
+        "cost_per_solved_usd": null,
+        "wall_s": 48.7,
+        "truncated": 0,
+        "no_result": 2,
+        "sources": {
+          "fence": 10,
+          "markers": 2
+        },
+        "errors": 0,
+        "unstable": 0,
+        "unstable_ids": [],
+        "sample_spread": 0.0
+      },
+      "tasks": {
+        "t01_weighted_jobs": {
+          "category": "algorithms",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            12
+          ],
+          "median_s": 2.22,
+          "tokens": 486
+        },
+        "t02_text_justify": {
+          "category": "spec",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.3333,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            18
+          ],
+          "median_s": 1.35,
+          "tokens": 291
+        },
+        "t03_json_parser": {
+          "category": "parsing",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 6.48,
+          "tokens": 1418
+        },
+        "t04_sql_report": {
+          "category": "sql",
+          "n": 1,
+          "first": 0.25,
+          "final": 0.3235,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            1,
+            4
+          ],
+          "median_s": 1.13,
+          "tokens": 239
+        },
+        "t05_async_pool": {
+          "category": "async",
+          "n": 1,
+          "first": 0.1667,
+          "final": 0.1667,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            2,
+            12
+          ],
+          "median_s": 2.04,
+          "tokens": 442
+        },
+        "t06_repo_bugfix": {
+          "category": "repo",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 2.93,
+          "tokens": 593
+        },
+        "t07_thread_queue": {
+          "category": "concurrency",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 2.07,
+          "tokens": 447
+        },
+        "t08_code_review": {
+          "category": "review",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            14
+          ],
+          "median_s": 0.19,
+          "tokens": 17
+        },
+        "t09_csv_rfc4180": {
+          "category": "parsing",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 2.57,
+          "tokens": 558
+        },
+        "t10_pairs_refactor": {
+          "category": "refactor",
+          "n": 1,
+          "first": 0.6154,
+          "final": 0.6154,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            8,
+            13
+          ],
+          "median_s": 0.96,
+          "tokens": 206
+        },
+        "t11_varint_protocol": {
+          "category": "binary",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 4.17,
+          "tokens": 912
+        },
+        "t12_ledger_feature": {
+          "category": "longcontext",
+          "n": 1,
+          "first": 0.0,
+          "final": 0.0,
+          "solved_first": 0.0,
+          "solved_final": 0.0,
+          "assertions": [
+            0,
+            1
+          ],
+          "median_s": 0.81,
+          "tokens": 140
+        }
+      },
+      "categories": {
+        "algorithms": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "async": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.1667,
+          "final": 0.1667
+        },
+        "binary": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "concurrency": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "longcontext": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "parsing": {
+          "n": 2,
+          "tasks": 2,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "refactor": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.6154,
+          "final": 0.6154
+        },
+        "repo": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "review": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.0
+        },
+        "spec": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.0,
+          "final": 0.3333
+        },
+        "sql": {
+          "n": 1,
+          "tasks": 1,
+          "first": 0.25,
+          "final": 0.3235
+        }
+      },
+      "signatures": [
+        {
+          "name": "100 random cases",
+          "records": 1,
+          "tasks": [
+            "t10_pairs_refactor"
+          ],
+          "example": "100 random cases: AssertionError: [9, 0, 8, 17, -8, 13, -6, 20, -2, 11, -20, -15, 9, -3, 6, 15, -15, -4, 0, -6, 12, -2, -19, -16] target 6: got 6, want 8",
+          "task_count": 1
+        },
+        {
+          "name": "200k zeros under 1.5s",
+          "records": 1,
+          "tasks": [
+            "t10_pairs_refactor"
+          ],
+          "example": "200k zeros under 1.5s: AssertionError: got 199999, want 19999900000",
+          "task_count": 1
+        },
+        {
+          "name": "basic",
+          "records": 1,
+          "tasks": [
+            "t04_sql_report"
+          ],
+          "example": "basic: query executes: OperationalError: no such table: sales_summary",
+          "task_count": 1
+        },
+        {
+          "name": "calls fn with item and index",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "calls fn with item and index: TypeError: options must be an object with \"retries\" property",
+          "task_count": 1
+        },
+        {
+          "name": "does not mutate items",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "does not mutate items: TypeError: options must be an object with \"retries\" property",
+          "task_count": 1
+        },
+        {
+          "name": "duplicates",
+          "records": 1,
+          "tasks": [
+            "t10_pairs_refactor"
+          ],
+          "example": "duplicates: AssertionError: got 2 != want 3",
+          "task_count": 1
+        },
+        {
+          "name": "empty resolves [] without calls",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "empty resolves [] without calls: TypeError: options must be an object with \"retries\" property",
+          "task_count": 1
+        },
+        {
+          "name": "exhausted retries rejects with last error",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "exhausted retries rejects with last error: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
+          "task_count": 1
+        },
+        {
+          "name": "fail-fast stops starting new items",
+          "records": 1,
+          "tasks": [
+            "t05_async_pool"
+          ],
+          "example": "fail-fast stops starting new items: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:",
+          "task_count": 1
+        },
+        {
+          "name": "import BoundedQueue and QueueClosed",
+          "records": 1,
+          "tasks": [
+            "t07_thread_queue"
+          ],
+          "example": "import BoundedQueue and QueueClosed: KeyError: 'QueueClosed'",
+          "task_count": 1
+        },
+        {
+          "name": "import and parse_json exists",
+          "records": 1,
+          "tasks": [
+            "t03_json_parser"
+          ],
+          "example": "import and parse_json exists: SyntaxError: invalid syntax (t03_json_parser.solution.py, line 26)",
+          "task_count": 1
+        },
+        {
+          "name": "import encode_varints/decode_varints",
+          "records": 1,
+          "tasks": [
+            "t11_varint_protocol"
+          ],
+          "example": "import encode_varints/decode_varints: SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='? (t11_varint_protocol.solution.py, line 67)",
+          "task_count": 1
+        }
+      ]
+    }
+  ],
+  "pairwise": [],
+  "evidence": {
+    "samples_required": 3,
+    "samples_per_task": 1,
+    "provisional": false
+  }
+}
